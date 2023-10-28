@@ -6,5 +6,5 @@ const electron_1 = require("electron");
 // Since we disabled nodeIntegration we can reintroduce
 // needed node functionality here
 process.once("loaded", () => {
-  global.ipcRenderer = electron_1.ipcRenderer;
+    global.ipcRenderer = electron_1.ipcRenderer;
 });
