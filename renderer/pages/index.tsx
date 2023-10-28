@@ -18,6 +18,10 @@ const IndexPage = () => {
     global.ipcRenderer.send("message", "hi from next");
   };
 
+  const onClickSetFile = async () => {
+    await global.ipcRenderer.invoke("dialog:open");
+  };
+
   return (
     <Layout title="Home | Next.js + TypeScript + Electron Example">
       <h1>Hello Next.js 👋</h1>
@@ -25,6 +29,7 @@ const IndexPage = () => {
       <p>
         <Link href="/about">About</Link>
       </p>
+      <button onClick={onClickSetFile}>ファイルを選択</button>
     </Layout>
   );
 };
