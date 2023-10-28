@@ -1,0 +1,5 @@
+main
+node_modules
+renderer/.next
+renderer/out
+next.config.js
