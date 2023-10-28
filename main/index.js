@@ -38,3 +38,7 @@ electron_1.ipcMain.on("message", (event, message) => {
     console.log(message);
     setTimeout(() => event.sender.send("message", "hi from electron"), 500);
 });
+electron_1.ipcMain.handle("dialog:open", async () => {
+    const result = await electron_1.dialog.showOpenDialog({ properties: ["openFile"] });
+    return result;
+});
