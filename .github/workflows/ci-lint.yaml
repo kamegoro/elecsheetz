@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   run-lint:
-    name: next-lint
+    name: lint
 
     timeout-minutes: 10
 
