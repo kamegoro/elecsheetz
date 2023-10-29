@@ -6,8 +6,6 @@ on:
 
 jobs:
   assign:
-    if: github.actor != 'renovate'
-
     name: Assign author to PR
     runs-on: ubuntu-latest
     steps:

@@ -3,3 +3,5 @@ node_modules
 renderer/.next
 renderer/out
 next.config.js
+postcss.config.js
+tailwind.config.js
