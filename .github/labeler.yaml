@@ -1,0 +1,6 @@
+feature:
+  - 'renderer/**/*'
+  - 'electron-src/**/*'
+  - 'main/**/*'
+github-actions:
+  - '.github/**/*'
