@@ -34,7 +34,7 @@
     "eslint-plugin-react": "7.33.2",
     "next": "14.0.0",
     "prettier": "^3.0.3",
-    "rimraf": "3.0.0",
+    "rimraf": "5.0.5",
     "typescript": "5.2.2"
   },
   "build": {
