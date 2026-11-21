@@ -1,14 +1,7 @@
-/* eslint-disable @typescript-eslint/no-namespace */
 import { ipcRenderer, IpcRenderer } from 'electron';
 
-declare global {
-  namespace NodeJS {
-    interface Global {
-      ipcRenderer: IpcRenderer;
-    }
-  }
-}
+type GlobalWithIpc = typeof globalThis & { ipcRenderer: IpcRenderer };
 
 process.once('loaded', () => {
-  global.ipcRenderer = ipcRenderer;
+  (global as GlobalWithIpc).ipcRenderer = ipcRenderer;
 });
