@@ -1,6 +1,10 @@
 feature:
-  - 'renderer/**/*'
-  - 'electron-src/**/*'
-  - 'main/**/*'
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'renderer/**/*'
+          - 'electron-src/**/*'
+          - 'main/**/*'
 github-actions:
-  - '.github/**/*'
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.github/**/*'
